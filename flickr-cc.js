@@ -40,7 +40,7 @@
 			
 			// Add a link back to the official Flickr search results page
 			var flickrSearch = 'https://www.flickr.com/search/?tags=' + encodeURIComponent(query) +
-			                   '&license=' + encodeURIComponent('1,2,3,4,5,6,7,8,9') +
+			                   '&license=' + encodeURIComponent('7,8,9,10') +
 			                   '&sort=interestingness-desc';
 			$('#see-also').html('See also: <a href="' + flickrSearch + '">Flickr advanced search page</a>');
 
@@ -51,14 +51,14 @@
 		flickr.photos.search({
 			tags: query,
 			sort: 'interestingness-desc',
-			license: "1,2,3,4,5,6,7,8,9" // All the permissively licensed photos
+			license: "7,8,9,10" // All the permissively licensed photos
 		}, callback);
 	}
 
 	// You can uncomment this and check the JS console to see more details about licenses...
 	/*flickr.photos.licenses.getInfo({
 		text: query,
-		license: "1,2,3,4,5,6,7,8,9" // All the permissively licensed photos
+		license: "7,8,9,10" // All the permissively licensed photos
 	}, function(rsp) {
 		console.log(rsp);
 	});*/
