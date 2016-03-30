@@ -7,7 +7,7 @@
 	if (location.search.substr(0, 3) == '?q=') {
 
 		// Add some user feedback
-		$('#photos').html('Loading...');
+		$('#photos').html('Hang on a sec...');
 
 		// We start with location.search, something like ?q=wilson%27s+warbler
 		var query = location.search.substr(3); // drop the first three chars: wilson%27s+warbler
@@ -42,7 +42,7 @@
 			var flickrSearch = 'https://www.flickr.com/search/?tags=' + encodeURIComponent(query) +
 			                   '&license=' + encodeURIComponent('7,8,9,10') +
 			                   '&sort=relevance';
-			$('#see-also').html('See also: <a href="' + flickrSearch + '">Flickr advanced search page</a>');
+			$('#see-also').html('Check out this search on the <a href="' + flickrSearch + '">Flickr advanced search page</a>');
 
 		};
 
