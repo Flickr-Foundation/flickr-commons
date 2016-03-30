@@ -1,7 +1,7 @@
 (function($) {
 
 	// Create a new Flickr API wrapper object
-	var flickr = new Flickr('1dff816a4f7ef984b178f7ed3eb85582');
+	var flickr = new Flickr('cb2172edd1a978b6c2835d2f8c7c9939');
 
 	// If the page was loaded with a 'q' param...
 	if (location.search.substr(0, 3) == '?q=') {
