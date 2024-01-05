@@ -40,7 +40,7 @@
 			
 			// Add a link back to the official Flickr search results page
 			var flickrSearch = 'https://www.flickr.com/search/?tags=' + encodeURIComponent(query) +
-			                   '&license=' + encodeURIComponent('7,8,9,10') +
+			                   '&license=' + encodeURIComponent('7') +
 			                   '&sort=relevance';
 			$('#see-also').html('Check out this search on the <a href="' + flickrSearch + '">Flickr advanced search page</a>');
 
